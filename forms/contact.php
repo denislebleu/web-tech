@@ -12,21 +12,23 @@
   $contact->ajax = true;
   
   $contact->to = $receiving_email_address;
-  $contact->from_name = isset($_POST['name']) ? $_POST['name'] : '';
-  $contact->from_email = isset($_POST['email']) ? $_POST['email'] : '';
-  $contact->subject = isset($_POST['subject']) ? $_POST['subject'] : '';
+  $contact->from_name = isset($_POST['Nom']) ? $_POST['Nom'] : '';
+  $contact->from_email = isset($_POST['Email']) ? $_POST['Email'] : '';
+  $contact->subject = isset($_POST['Objet']) ? $_POST['Objet'] : '';
 
   // Configuration SMTP
   $contact->smtp = array(
-    'host' => 'smtp.yourprovider.com',  // Remplace par le serveur SMTP de ton hébergeur (OVH, Gmail, etc.)
-    'username' => 'votre_email@example.com',  // Remplace par ton adresse email complète
-    'password' => 'votre_mot_de_passe',  // Remplace par ton mot de passe d'email ou mot de passe d'application
-    'port' => '587',  // Utilise le port SMTP correct (587 pour TLS, 465 pour SSL)
-    'encryption' => 'tls'  // Utilise 'ssl' ou 'tls' selon ton fournisseur
+    'host' => 'smtp-mail.outlook.com',  // Serveur SMTP d'Outlook
+    'username' => 'webandtech@outlook.com',  // Ton adresse email complète
+    'password' => 'xjwrbngmnhojdufi',  // Ton mot de passe ou mot de passe d'application
+    'port' => '587',  // Port pour TLS
+    'encryption' => 'tls'  // Utilisation de TLS pour la sécurité
   );
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
+  // Ajout des messages (avec les champs en français)
+  $contact->add_message( $_POST['Nom'], 'Nom');
+  $contact->add_message( $_POST['Email'], 'Email');
+  $contact->add_message( $_POST['Objet'], 'Objet');
   $contact->add_message( $_POST['message'], 'Message', 10);
 
   echo $contact->send();
