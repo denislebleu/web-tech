@@ -261,127 +261,89 @@
     </section><!-- /Portfolio Section -->
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+   <!-- Contact Section -->
+<section id="contact" class="contact section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+  </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6">
 
         <div class="row gy-4">
-
-          <div class="col-lg-6">
-
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Adresse</h3>
-                  <p>38080 l'Isle d'Abeau</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Appelez nous</h3>
-                  <p>06 70 25 62 62 </p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email</h3>
-                  <p>webandtech@outlook.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="500">
-                  <i class="bi bi-clock"></i>
-                  <h3>heures d'ouverture</h3>
-                  <p>Lundi - Vendredi</p>
-                  <p>9:00 - 18:00</p>
-                </div>
-              </div><!-- End Info Item -->
-
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade" data-aos-delay="200">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Adresse</h3>
+              <p>38080 l'Isle d'Abeau</p>
             </div>
+          </div><!-- End Info Item -->
 
-          </div>
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade" data-aos-delay="300">
+              <i class="bi bi-telephone"></i>
+              <h3>Appelez nous</h3>
+              <p>06 70 25 62 62 </p>
+            </div>
+          </div><!-- End Info Item -->
 
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade" data-aos-delay="400">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p>webandtech@outlook.com</p>
+            </div>
+          </div><!-- End Info Item -->
 
-                <div class="col-md-6">
-                  <input type="text" name="Nom" class="form-control" placeholder="Nom" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="Email" placeholder="Email" required="">
-                </div>
-
-                <div class="col-12">
-                  <input type="text" class="form-control" name="Objet" placeholder="Objet" required="">
-                </div>
-
-                <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-12 text-center">
-                  <div class="loading">chargement</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">votre message a bien été envoyé, merci!</div>
-
-                  <button type="submit">envoyer un message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade" data-aos-delay="500">
+              <i class="bi bi-clock"></i>
+              <h3>heures d'ouverture</h3>
+              <p>Lundi - Vendredi</p>
+              <p>9:00 - 18:00</p>
+            </div>
+          </div><!-- End Info Item -->
 
         </div>
 
       </div>
 
-    </section><!-- /Contact Section -->
+      <div class="col-lg-6">
+        <!-- Formulaire de contact -->
+        <form action="https://formspree.io/f/yourFormID" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
 
-  </main>
+            <div class="col-md-6">
+              <input type="text" name="Nom" class="form-control" placeholder="Nom" required="">
+            </div>
 
-  <footer id="footer" class="footer position-relative light-background">
+            <div class="col-md-6 ">
+              <input type="email" name="Email" class="form-control" placeholder="Email" required="">
+            </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="sitename">Web&Tech</strong> <span>tous droits réservés</span></p>
-      <div class="credits">
-      </div>
+            <div class="col-12">
+              <input type="text" name="Objet" class="form-control" placeholder="Objet" required="">
+            </div>
+
+            <div class="col-12">
+              <textarea name="message" class="form-control" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-12 text-center">
+              <button type="submit">Envoyer un message</button>
+            </div>
+
+          </div>
+        </form>
+      </div><!-- End Contact Form -->
+
     </div>
 
-  </footer>
+  </div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+</section><!-- /Contact Section -->
